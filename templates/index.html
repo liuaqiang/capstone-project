@@ -133,7 +133,7 @@
                                 <p class="text-muted text-center">
 									<font  size="1">
 										<sup>1</sup>These statistics were created by excluding loans that did not
-										meet the credit policy, late or default.
+										meet the credit policy, or were late/default.
 									</font>
                                 </p>
                             </div>                      
@@ -217,29 +217,24 @@
                     </div>
                 </div>
             </div>
-           
             <div class="section section-features">
                 <div class="container">
-                    <h4 class="header-text text-center"><big>R</big>esults</h4>
+                    <h4 class="header-text text-center"><big>A</big>lgorithm</h4>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card card-blue">
                                 <div class="icon">
-                                    <i class="pe-7s-note2"></i>
+                                    <i class="pe-7s-light"></i>
                                 </div>
                                 <div class="text">
-                                    <h4>Online Customers Management</h4>
-                                    <p>All appointments sync with your Google calendar so your availability is always up to date. See your schedule at a glance from any device.</p>
+                                    <h4>Logistic Regression</h4>
+                                    <p>
+                                        Two families of algorithms were explored: 
+                                        <i>random forests</i> and <i>logistic regression</i>. 
+                                        Logistic regression exhibited superior performance according to the  
+                                        <a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html" target="_blank">ROC-AUC</a> score.
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-blue">
-                                <div class="icon">
-                                    <i class="pe-7s-bell"></i>
-                                </div>
-                                <h4>Smart Notifications on hands</h4>
-                                <p>Automatic text and email reminders make sure customers always remember their upcoming appointments.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -247,8 +242,22 @@
                                 <div class="icon">
                                     <i class="pe-7s-graph1"></i>
                                 </div>
-                                <h4>Know your business better now</h4>
-                                <p>Take payments and run your business on the go, in your store and then see how it all adds up with analytics.</p>
+                                <h4>Boosting</h4>
+                                <p>
+                                    <a target = "_blank" href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html">Ada-boosting</a> 
+                                    was applied to improve prediction accuracy.
+                                </p>
+                            </div>
+                        </div>                        
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-shuffle"></i>
+                                </div>
+                                <h4>Cross Validation</h4>
+                                <p>
+                                    For tuning Hyper-parameters.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +316,9 @@
 							It extracts invaluable information and does the human kind good."
 							</I>
                         </h4>
-                        <a href="mailto:liuaqiang@gmail.com" action = "_blank" class="btn btn-neutral btn-lg btn-fill">Click here to send me an email</a>
+                        <a href="mailto:liuaqiang@gmail.com" action = "_blank" class="btn btn-neutral btn-lg btn-fill">
+                            Click here to send me an email
+                        </a>
                     </div>
                 </div>
             </div>
