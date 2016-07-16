@@ -16,7 +16,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
         <link href="static/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
-    </head>
+    </head>   
     <body class="landing-page landing-page1">
         <nav class="navbar navbar-transparent navbar-top" role="navigation">
             <div class="container">
@@ -265,10 +265,12 @@
                                 <div class="icon">
                                     <i class="pe-7s-graph1"></i>
                                 </div>
-                                <h4>Boosting</h4>
+                                <h4>Accuracy Boosting</h4>
                                 <p>
-                                    <a target = "_blank" href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html">Gradient-boosting</a> 
+                                    <sup>1 </sup><a target = "_blank" href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html">Gradient-boosting</a> 
                                     was applied to improve prediction accuracy.
+                                    <br>
+                                    <sup>2 </sup> Weight each sample with <I>Funded_Amount</I> as a proxy for significance.
                                 </p>
                             </div>
                         </div>                        
@@ -277,57 +279,74 @@
                                 <div class="icon">
                                     <i class="pe-7s-shuffle"></i>
                                 </div>
-                                <h4>Cross Validation</h4>
+                                <h4>Cross Validation/Testing</h4>
                                 <p>
-                                    For tuning Hyper-parameters.
+                                    <sup>1 </sup>Training/cross-validation set included loans issued on or before April 30<sup>th</sup>, 2013, 
+                                    because most of them (92%) are finalized.
+                                    <br>
+                                    <sup>2 </sup>Loans issued on or after May 1<sup>st</sup>, 2013 will be used for testing.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section section-features">
+            </div>            
+            <div class="section section-demo">
                 <div class="container">
                     <h4 class="header-text text-center"><big>R</big>esults</h4>
+                    <p class="header-text text-center">ROC_AUC = 0.70</p>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card card-red">
-                                <div class="icon">
-                                    <i class="pe-7s-gleam"></i>
-                                </div>
-                                <div class="text">
-                                    <h4>Risk Averse</h4>
-                                    <p>
-                                        If you are risk averse, we have you covered 100%.
-                                    </p>
-                                </div>
+                            <h4 class="header-text">R<small>isk </small>A<small>verse </small></h4>
+                            <p>
+                                Set a low threshold in logistic regression to avoid as many potential Charged Off loans as possible 
+                            </p>
+                        </div>                                                 
+                        <div class="col-md-6 col-md-offset-2">
+                            <div class="demo-image">
+                                <p class="text text-center">
+                                <small>Prediction Profile for Risk Averse Investors</small>
+                                </p>                            
+                                <img src="static/img/template/examples/risk_averse.png" alt="">
                             </div>
                         </div>
+                    </div>
+                    <br>
+                    <div class="row">
                         <div class="col-md-4">
-                            <div class="card card-grey">
-                                <div class="icon">
-                                    <i class="pe-7s-less"></i>
-                                </div>
-                                <h4>Risk Neutral</h4>
-                                <p>
-                                    Invest in both.
-                                </p>
+                            <h4 class="header-text">R<small>isk </small>N<small>eutral </small></h4>
+                            <p>
+                                Balance potential Charged Off Loans with potential Fully Paid loans
+                            </p>
+                        </div>                                                 
+                        <div class="col-md-6 col-md-offset-2">
+                            <div class="demo-image">
+                                <p class="text text-center">
+                                <small>Prediction Profile for Risk Neutral Investors</small>
+                                </p>                            
+                                <img src="static/img/template/examples/risk_neutral.png" alt="">
                             </div>
-                        </div>                        
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
                         <div class="col-md-4">
-                            <div class="card card-green">
-                                <div class="icon">
-                                    <i class="pe-7s-right-arrow"></i>
-                                </div>
-                                <h4>Risk Pro</h4>
-                                <p>
-                                    Run your guts.
-                                </p>
+                            <h4 class="header-text">R<small>isk </small>S<small>eeking </small></h4>
+                            <p>
+                                Go for it, you wild one!
+                            </p>
+                        </div>                                                 
+                        <div class="col-md-6 col-md-offset-2">
+                            <div class="demo-image">
+                                <p class="text text-center">
+                                <small>Prediction Profile for Risk Seeking Investors</small>
+                                </p>                            
+                                <img src="static/img/template/examples/risk_seeking.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>         
             <div class="section section-testimonial">
                 <div class="container">
                     <h4 class="header-text text-center"><big>T</big>here's <big>M</big>ore to <big>i</big>t</h4>
@@ -342,7 +361,7 @@
                                     <p>New Perspective</p>
                                     <h4>
                                         Lending Club<sup>&#174;</sup> data have been extensively analyzed. 
-                                        Yet here's another new angle to further explore market potential. 
+                                        Yet there's always another new angle to further explore untapped market.
                                         Creativity knows no boundary: sky is the limit.
                                     </h4>
                                 </div>
